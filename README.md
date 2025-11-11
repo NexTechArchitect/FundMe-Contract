@@ -1,8 +1,7 @@
 
 💜 FundMe Smart Contract  
 
-🧠 A simple yet powerful "crowdfunding dApp" built with *Solidity × Foundry* —  
-because sometimes, trusting code > trusting people 😌  
+🧠 A simple yet powerful "crowdfunding dApp" built with Solidity × Foundry    
 
  ⚙ Tech Stack  
 ✨ Solidity ^0.8.19  
@@ -11,14 +10,14 @@ because sometimes, trusting code > trusting people 😌
 📡 Chainlink Price Feeds (for USD conversion)  
 
 
-## 💫 What It Does  
-💰 Lets anyone fund ETH  
-📊 Tracks who sent how much  
-🪙 Converts ETH → USD (thanks to Chainlink magic)  
-🔐 Only the contract owner can withdraw (no rug pulls, promise 🤞)  
-🧪 Fully tested with Foundry’s cheatcodes (because vibes ≠ bugs)  
+💫 What It Does  
+Lets anyone fund ETH  
+Tracks who sent how much  
+Converts ETH → USD (thanks to Chainlink magic)  
+Only the contract owner can withdraw (no rug pulls, promise 🤞)  
+Fully tested with Foundry’s cheatcodes (because vibes ≠ bugs)  
 
- 🧰 Quick Commands  
+🧰 Quick Commands  
 
 ```bash
 # build contracts
