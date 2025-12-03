@@ -1,19 +1,19 @@
 
-FundMe – Decentralized ETH Funding Contract
+FundMe ( Decentralized ETH Funding Contract )
 
 FundMe is a minimal yet production-grade ETH funding contract built with Solidity and Foundry.
 It demonstrates how Web3 applications handle value transfers, enforce pricing logic using oracles, and implement secure withdrawal patterns.
 This repository serves as a strong reference for developers learning how decentralized funding flows operate on-chain.
 
 
-Contract Overview
+Contract Overview:-
 
 The FundMe contract allows any user to contribute ETH, while enforcing a minimum funding threshold defined in USD.
 It integrates Chainlink's decentralized price feeds to ensure every deposit meets the required USD value at the current ETH price.
 All collected funds can only be withdrawn by the contract owner, following strict access-control rules.
 
 
-Core Features
+Core Features:-
 
 Accepts ETH contributions from any externally-owned account
 Enforces a USD-denominated minimum contribution using Chainlink price feeds
@@ -23,7 +23,7 @@ Optimized using immutable, constant, and minimal storage operations
 Tested using Foundry’s built-in unit testing framework and mocks
 Includes deployment scripts for local and testnet environments
 
-Technical Architecture
+Technical Architecture:-
 
 Handles all funding logic, including:
 
@@ -74,17 +74,23 @@ forge script script/DeployFundMe.s.sol:DeployFundMe
   
 
 Repository Structure:-
-
 src/
-   └── FundMe.sol
+   
+    FundMe.sol
+
+    PriceConverter.sol
 
 script/
-   └── DeployFundMe.s.sol
+
+    DeployFundMe.s.sol
 
 test/
-   └── FundMeTest.t.sol
-   
 
+    FundMeTest.t.sol
+
+    IntegrationFundmeTest.t.sol
+    
+   
 Each script focuses on a single action to maintain clarity, modularity, and easy execution.
 
 
