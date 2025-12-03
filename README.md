@@ -25,8 +25,6 @@ Includes deployment scripts for local and testnet environments
 
 Technical Architecture
 
-FundMe.sol
-
 Handles all funding logic, including:
 
 • Receiving ETH through payable functions
@@ -37,15 +35,16 @@ Handles all funding logic, including:
 • Gas-optimized owner storage using immutable
 
 
-Price Conversion Logic
+Price Conversion Logic:-
 
-The contract consumes real-time price data from Chainlink feeds to calculate:
+The contract consumes real time price data from Chainlink feeds to calculate:
 
 USD value = ETH amount × ETH/USD price
 
 This ensures that the minimum funding threshold remains consistent regardless of ETH market volatility.
 
-Development and Tooling
+
+Development and Tooling:-
 
 The project is fully built using Foundry and includes scripts for compilation, testing, deployment, and verification.
 
@@ -68,7 +67,7 @@ forge script script/DeployFundMe.s.sol
 
 Testnet Deployment (Sepolia)
 
-forge script script/DeployFundMe.s.sol 
+forge script script/DeployFundMe.s.sol:DeployFundMe 
   --rpc-url $SEPOLIA_RPC_URL 
   --private-key $PRIVATE_KEY 
   --broadcast
@@ -114,4 +113,4 @@ MIT License
 Author
 
 NEXTECHARHITECT
-(Smart Contract Developer – Solidity, Foundry, Web3 Engineering)
+(Smart Contract Developer and Solidity, Foundry, Web3 Engineering)
