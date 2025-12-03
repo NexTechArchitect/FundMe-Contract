@@ -71,8 +71,9 @@ forge script script/DeployFundMe.s.sol:DeployFundMe
   --rpc-url $SEPOLIA_RPC_URL 
   --private-key $PRIVATE_KEY 
   --broadcast
+  
 
-Repository Structure
+Repository Structure:-
 
 src/
    └── FundMe.sol
@@ -82,11 +83,12 @@ script/
 
 test/
    └── FundMeTest.t.sol
+   
 
 Each script focuses on a single action to maintain clarity, modularity, and easy execution.
 
 
-Key Concepts Demonstrated
+Key Concepts Demonstrated:-
 
 
 • Payable functions and ETH value transfer
@@ -104,6 +106,7 @@ Key Concepts Demonstrated
 • Gas-efficient Solidity patterns
 
 • Deployment automation with Foundry scripts
+
 
 License
 
