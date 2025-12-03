@@ -47,7 +47,6 @@ contract FundMe {
         require(success, "Withdraw failed");
     }
 
-    // --- helpers for tests/integration ---
     function getOwner() external view returns (address) {
         return i_owner;
     }
