@@ -35,10 +35,15 @@ Technical Architecture:-
 Handles all funding logic, including:
 
 • Receiving ETH through payable functions.
+
 • Converting ETH to USD using Chainlink AggregatorV3Interface.
+
 • Maintaining a persistent record of funders and contribution amounts.
+
 • Allowing only the contract owner to withdraw funds.
+
 • Resetting contributor mappings after withdrawal.
+
 • Gas-optimized owner storage using immutable.
 
 
