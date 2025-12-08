@@ -15,13 +15,13 @@ All collected funds can only be withdrawn by the contract owner, following stric
 
 Core Features:-
 
-Accepts ETH contributions from any externally-owned account
-Enforces a USD-denominated minimum contribution using Chainlink price feeds
-Tracks individual funders and their total contributions
-Implements owner-restricted withdrawals
-Optimized using immutable, constant, and minimal storage operations
-Tested using Foundry’s built-in unit testing framework and mocks
-Includes deployment scripts for local and testnet environments
+Accepts ETH contributions from any externally-owned account.
+Enforces a USD-denominated minimum contribution using Chainlink price feeds.
+Tracks individual funders and their total contributions.
+Implements owner-restricted withdrawals.
+Optimized using immutable, constant, and minimal storage operations.
+Tested using Foundry’s built-in unit testing framework and mocks.
+Includes deployment scripts for local and testnet environments.
 
 Technical Architecture:-
 
