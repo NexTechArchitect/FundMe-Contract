@@ -12,7 +12,6 @@ contract IntegrationFundMeTest is Test {
     uint256 constant SEND_VALUE = 0.1 ether;
     uint256 constant STARTING_BALANCE = 10 ether;
 
-    // so withdraw() can send ETH back here without revert
     receive() external payable {}
 
     function setUp() public {
@@ -22,12 +21,11 @@ contract IntegrationFundMeTest is Test {
     }
 
     function testUserCanFundAndOwnerCanWithdraw() public {
-        // fund
+       
         vm.prank(USER);
         fundMe.fund{value: SEND_VALUE}();
         assertEq(fundMe.getAddressToAmountFunded(USER), SEND_VALUE);
 
-        // withdraw by owner
         vm.prank(fundMe.getOwner());
         fundMe.withdraw();
 
