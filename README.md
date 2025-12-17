@@ -138,8 +138,6 @@ A clean, modular layout powered by Foundry.
 
 ## 🛠 Makefile Commands
 
-Since the project includes a `Makefile`, you can skip long Foundry commands and use these shortcuts:
-
 * `make build` : Compile the project.
 * `make test` : Run the test suite.
 * `make deploy` : Deploy to the network specified in `.env`.
