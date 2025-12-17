@@ -8,9 +8,8 @@
     <a href="https://github.com/NexTechArchitect/FundMe-Contract">
       <img src="https://img.shields.io/badge/Stack-Solidity_%7C_Foundry-363636?style=for-the-badge&logo=solidity&logoColor=white" />
     </a>
-    <img src="https://img.shields.io/badge/Oracle-Chainlink_Price_Feeds-375BD2?style=for-the-badge&logo=chainlink&logoColor=white" />
     <img src="https://img.shields.io/badge/Finance-DeFi_Crowdfunding-00C853?style=for-the-badge&logo=ethereum&logoColor=white" />
-    <img src="https://img.shields.io/badge/Security-Access_Control-FF4500?style=for-the-badge&logo=security-scorecard&logoColor=white" />
+
   </p>
 
   <h3>💸 A Decentralized & USD-Pegged ETH Crowdfunding Contract</h3>
@@ -135,7 +134,7 @@ FundMe-Contract/
 
 ## 🛠 Makefile Workflow
 
-We use **Make** to automate complex Foundry commands. This ensures consistency and saves time during development.
+
 
 | Command | Action Performed |
 | --- | --- |
@@ -145,7 +144,6 @@ We use **Make** to automate complex Foundry commands. This ensures consistency a
 | **`make anvil`** | Starts a local Ethereum node for rapid testing and debugging. |
 | **`make format`** | Auto-formats solidity code to standard style guidelines. |
 
-> *Tip: Run `make help` to see all available commands.*
 
 ---
 
