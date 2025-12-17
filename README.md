@@ -11,7 +11,6 @@
     <img src="https://img.shields.io/badge/Oracle-Chainlink_Price_Feeds-375BD2?style=for-the-badge&logo=chainlink&logoColor=white" />
     <img src="https://img.shields.io/badge/Finance-DeFi_Crowdfunding-00C853?style=for-the-badge&logo=ethereum&logoColor=white" />
     <img src="https://img.shields.io/badge/Security-Access_Control-FF4500?style=for-the-badge&logo=security-scorecard&logoColor=white" />
-    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
   </p>
 
   <h3>💸 A Decentralized & USD-Pegged ETH Crowdfunding Contract</h3>
@@ -116,32 +115,37 @@ This contract is engineered to be **Gas Efficient**. We utilize specific Solidit
 
 ## 📂 Directory Structure
 
-A clean, modular layout powered by Foundry.
+A clean, modular layout optimized for Foundry development.
 
-* 📂 **`src/`**
-* 📄 `FundMe.sol` — The core logic handling deposits, withdrawals, and modifiers.
-* 📄 `PriceConverter.sol` — A library to abstract the Chainlink Oracle math.
+```text
+FundMe-Contract/
+├── src/
+│   ├── FundMe.sol           // [CORE] Main crowdfunding & withdrawal logic
+│   └── PriceConverter.sol   // [LIB]  Chainlink Oracle math library
+├── script/
+│   ├── DeployFundMe.s.sol   // [OPS]  Network-aware deployment script
+│   └── HelperConfig.s.sol   // [CONF] Mock config for local testing
+└── test/
+    ├── unit/                // [TEST] Isolated function testing
+    └── integration/         // [TEST] Full funding & withdrawal simulation
 
-
-* 📂 **`script/`**
-* 🚀 `DeployFundMe.s.sol` — Deploys the contract using the correct network config.
-* 🔧 `HelperConfig.s.sol` — Automatically detects if running on Anvil (Local) or Sepolia (Live).
-
-
-* 📂 **`test/`**
-* 🧪 `FundMeTest.t.sol` — Unit tests for funding, withdrawals, and access control.
-* 🔗 `Interactions.t.sol` — Integration tests.
-
-
+```
 
 ---
 
-## 🛠 Makefile Commands
+## 🛠 Makefile Workflow
 
-* `make build` : Compile the project.
-* `make test` : Run the test suite.
-* `make deploy` : Deploy to the network specified in `.env`.
-* `make snapshot` : Generate a gas snapshot.
+We use **Make** to automate complex Foundry commands. This ensures consistency and saves time during development.
+
+| Command | Action Performed |
+| --- | --- |
+| **`make build`** | Compiles all smart contracts and generates ABI artifacts. |
+| **`make test`** | Executes the full test suite (Unit + Integration) with verbosity. |
+| **`make deploy`** | Deploys the contract to the network defined in your `.env` file (Sepolia). |
+| **`make anvil`** | Starts a local Ethereum node for rapid testing and debugging. |
+| **`make format`** | Auto-formats solidity code to standard style guidelines. |
+
+> *Tip: Run `make help` to see all available commands.*
 
 ---
 
