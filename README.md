@@ -7,7 +7,7 @@
   <p>
     <a href="https://github.com/NexTechArchitect/FundMe-Contract">
     </a>
-    <img src="https://img.shields.io/badge/Finance-DeFi_Crowdfunding-00C853?style=for-the-badge&logo=ethereum&logoColor=clan" />
+    <img src="https://img.shields.io/badge/Finance-DeFi_Crowdfunding-00C853?style=for-the-badge&logo=ethereum&logoColor=black" />
 
   </p>
 
