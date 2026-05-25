@@ -168,7 +168,7 @@ FundMe-Contract/
 
 
 
-<b>Engineered by NEXTECHARHITECT</b>
+<b>Engineered by NexTechArchitect</b>
 
 
 
